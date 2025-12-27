@@ -17,7 +17,7 @@ fn main() {
         .add_plugins(RapierPhysicsPlugin::<NoUserData>::pixels_per_meter(100.0))
         .add_systems(Startup, set_gravity)
 
-        .add_plugins((WorldPlugin, PlayerPaddle))
+        .add_plugins((WorldPlugin, PlayerPaddle, BallPlugin))
 
         .run();
 }
